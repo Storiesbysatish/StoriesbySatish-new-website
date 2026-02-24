@@ -158,7 +158,7 @@ Looking forward to your response!`;
                     <div className="col-lg-7 col-12 mx-auto">
                         <h2 className="mb-4 text-center" data-aos="fade-up">Lock your Moments, <br /> Book your Shoot</h2>
 
-                        <form className="contact-form" role="form" data-aos="fade-up">
+                        <form className="contact-form" data-aos="fade-up">
                             <div className="row">
                                 <div className="col-lg-6 col-6">
                                     <label htmlFor="name" className="form-label">Name <sup className="text-danger">*</sup></label>
