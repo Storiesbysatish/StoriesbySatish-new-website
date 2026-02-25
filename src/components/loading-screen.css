@@ -1,0 +1,102 @@
+/* Loading screen – white, simple, minimal */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: opacity 0.6s ease, visibility 0.6s step-end;
+}
+
+.loading-screen--visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.loading-screen--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.6s ease, visibility 0.6s step-end 0.6s;
+}
+
+.loading-screen__backdrop {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+}
+
+.loading-screen__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loading-screen__logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-screen__logo {
+  width: 48px;
+  height: 48px;
+  color: #155b08;
+  animation: loading-logo-fade 2s ease-in-out infinite;
+}
+
+.loading-screen__text {
+  margin: 0;
+  font-family: var(--body-font-family, 'Noto Sans JP', sans-serif);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #333;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.loading-screen--visible .loading-screen__text {
+  animation: loading-text-in 0.5s ease forwards;
+  animation-delay: 0.15s;
+  animation-fill-mode: both;
+}
+
+.loading-screen__phrase {
+  margin: 0;
+  font-family: var(--body-font-family, 'Noto Sans JP', sans-serif);
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #666;
+  font-style: italic;
+  max-width: 20ch;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.loading-screen--visible .loading-screen__phrase {
+  animation: loading-text-in 0.5s ease forwards;
+  animation-delay: 0.35s;
+  animation-fill-mode: both;
+}
+
+@keyframes loading-text-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-logo-fade {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}

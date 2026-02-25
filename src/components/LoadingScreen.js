@@ -1,0 +1,21 @@
+import React from "react";
+import "./loading-screen.css";
+
+const LoadingScreen = ({ isVisible }) => {
+  return (
+    <div className={`loading-screen ${isVisible ? "loading-screen--visible" : "loading-screen--hidden"}`} aria-hidden={!isVisible}>
+      <div className="loading-screen__backdrop" />
+      <div className="loading-screen__content">
+        <div className="loading-screen__logo-wrap">
+          <svg className="loading-screen__logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8C20 8 14 16 14 24c0 6 4 10 12 12l6 2c10 3 14 8 14 14 0 8-6 14-18 14-10 0-16-4-18-10l-2-4h-8l2 6c4 10 14 16 26 16 14 0 24-8 24-20 0-8-4-12-12-14l-6-2c-10-3-14-8-14-14 0-8 6-14 18-14 10 0 16 4 18 10l2 4h8l-2-6C48 12 38 8 32 8z" fill="currentColor"/>
+          </svg>
+        </div>
+        <p className="loading-screen__text">StoriesbySatish</p>
+        <p className="loading-screen__phrase">Every moment has a story.</p>
+      </div>
+    </div>
+  );
+};
+
+export default LoadingScreen;
