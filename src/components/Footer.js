@@ -28,9 +28,9 @@ function Footer() {
 
                     <div className="col-lg-2 col-5 ms-auto">
                         <ul className="social-icon">
-                            <li><a href="#" className="social-icon-link bi-facebook"></a></li>
-                            <li><a href="#" className="social-icon-link bi-whatsapp"></a></li>
-                            <li><a href="https://www.instagram.com/storiesbysatish.k/" className="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer"></a></li>
+                            <li><a href="https://www.facebook.com/" className="social-icon-link bi-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span className="visually-hidden">Facebook</span></a></li>
+                            <li><a href="https://wa.me/919632825461" className="social-icon-link bi-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><span className="visually-hidden">WhatsApp</span></a></li>
+                            <li><a href="https://www.instagram.com/storiesbysatish.k/" className="social-icon-link bi-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span className="visually-hidden">Instagram</span></a></li>
                         </ul>
                     </div>
                 </div>

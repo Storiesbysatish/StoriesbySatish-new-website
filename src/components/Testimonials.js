@@ -7,7 +7,6 @@ import pfp2 from '../assets/images/testimoni/freepik__the-style-is-candid-image-
 import pfp3 from '../assets/images/testimoni/freepik__the-style-is-candid-image-photography-with-natural__91507.jpg';
 import pfp4 from '../assets/images/testimoni/freepik__the-style-is-candid-image-photography-with-natural__91508.jpg';
 import pfp5 from '../assets/images/testimoni/freepik__the-style-is-candid-image-photography-with-natural__91509.jpg';
-import pfp6 from '../assets/images/testimoni/freepik__the-style-is-candid-image-photography-with-natural__91510.jpg';
 
 function Testimonials() {
     useEffect(() => {
