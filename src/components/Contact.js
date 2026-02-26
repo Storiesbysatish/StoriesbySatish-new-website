@@ -132,7 +132,7 @@ Looking forward to your response!`;
 
       {/* YouTube Icon (unchanged) */}
       <a
-        href="https://youtube.com/@satishkumar.s8259?si=oc2GlZ6dJ-tOQxLT"
+        href="https://www.youtube.com/@storiesbysatish.k"
         target="_blank"
         rel="noopener noreferrer"
         className="icon-btn"
