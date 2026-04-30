@@ -8,7 +8,7 @@ function Footer() {
                     <div className="col-12">
                         <h5 className="text-white">
                             <i className="bi-geo-alt-fill me-2"></i>
-                            Benagaluru, Karnataka
+                            Bengaluru, Karnataka
                         </h5>
 
                         {/* Phone Number */}
